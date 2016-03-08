@@ -1,0 +1,77 @@
+/* ============================
+    Base Element Styles
+============================ */
+
+* {
+    box-sizing: border-box; /* border box forces the padding and borders into the width and height of the elements instead of expanding them. That way, it will take up exactly 70% of the viewport width */
+}
+
+html { 
+    background: #f9f9f9;
+}
+
+body {
+/*    line-height: 1.6;*/
+
+}
+
+.container {
+    padding: 0 1em;
+}
+
+.main-header, .main-portfolio, .main-contact {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100px;
+    height: 70px;
+}
+
+h1 {
+/*    margin-top: 0;*/ /* Set this to remove the gap between the top and the header */
+}
+
+.main-header {
+    padding: 1em 0;
+}
+
+.main-portfolio {
+    background: white;
+    padding-top: 30px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 0;
+    margin: 5px 0;
+    background-color: white;
+}
+
+
+/* ============================
+    Media Queries
+============================ */
+
+@media (min-width: 769px) { /* Treehouse suggests 769px instead of 600px */
+    
+    .wrap {
+        min-height: calc(100vh - 57.7188px); /* calc will subtract 89 pixels from 100vh */
+        
+    }
+    
+    html {
+
+    }
+    
+    .container {
+        width: 70%; /* Prevents the elements from stretching too wide */
+        max-width: 1000px; /* Prevents the layout container from getting any wider than 1000 pixels */
+        margin: 0 auto; /* Centers all elements in the page */
+    }
+}
