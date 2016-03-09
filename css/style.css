@@ -19,10 +19,6 @@ body {
     padding: 0 1em;
 }
 
-.main-header, .main-portfolio, .main-contact {
-    text-align: center;
-}
-
 h3 {
     text-transform: uppercase;
 }
@@ -30,6 +26,18 @@ h3 {
 img {
     width: 100px;
     height: 70px;
+}
+
+
+/* ============================
+    Header & Navigation
+============================ */
+.name, .main-nav li {
+    background: grey;
+}
+
+.main-header, .main-portfolio, .main-contact {
+    text-align: center;
 }
 
 h1 {
@@ -53,11 +61,23 @@ ul {
 ul li {
     text-decoration: none;
     list-style: none;
-    padding: 10px 0;
+/*
+    padding: 10px 0; */
     margin: 5px 0;
     background-color: white;
 }
 
+.main-nav a:hover {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.name a,
+.main-nav a {
+    padding: 10px 10px;
+    display: block;
+}
 
 /* ============================
     Media Queries
@@ -71,7 +91,7 @@ ul li {
     }
     
     html {
-
+        background-color: green;
     }
     
     .container {
@@ -79,4 +99,28 @@ ul li {
         max-width: 1000px; /* Prevents the layout container from getting any wider than 1000 pixels */
         margin: 0 auto; /* Centers all elements in the page */
     }
+    
+    .name,
+    .main-nav,
+    .main-nav li {
+        display: inline-block;
+    }
+    
+    .col {
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        background-color: none;
+        vertical-align: top;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+/*
+    
+    .name a,
+    .main-nav a {
+        display: block;
+    }
+    
+*/
 }
