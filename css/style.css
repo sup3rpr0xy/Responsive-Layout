@@ -100,7 +100,10 @@ ul li {
         margin: 0 auto; /* Centers all elements in the page */
     }
     
-    .name,
+    .profile-pic {
+        float: right;
+    }
+    
     .main-nav,
     .main-nav li {
         display: inline-block;
@@ -115,6 +118,7 @@ ul li {
         padding-left: 1em;
         padding-right: 1em;
     }
+    
 /*
     
     .name a,
