@@ -104,27 +104,13 @@ ul li {
         float: right;
     }
     
-    .main-nav,
-    .main-nav li {
-        display: inline-block;
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        
     }
     
-    .col {
-        display: inline-block;
-        width: 50%;
-        margin-right: -4px;
-        background-color: none;
-        vertical-align: top;
-        padding-left: 1em;
-        padding-right: 1em;
+    .box {
+        flex: 1 40%;
     }
-    
-/*
-    
-    .name a,
-    .main-nav a {
-        display: block;
-    }
-    
-*/
 }
