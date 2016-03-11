@@ -6,12 +6,20 @@
     box-sizing: border-box; /* border box forces the padding and borders into the width and height of the elements instead of expanding them. That way, it will take up exactly 70% of the viewport width */
 }
 
+h1, h4 {
+  font: 400 80px/1.2 'Nixie One', Georgia, serif;
+}
+
+p {
+  font: 400 15px/1.6 'Ledger', Garamond, Georgia, serif;
+}
+
 html { 
-    background: #f9f9f9;
+    background-color: lightgrey;
 }
 
 body {
-/*    line-height: 1.6;*/
+    line-height: 1.6;
 
 }
 
@@ -24,33 +32,36 @@ h3 {
 }
 
 img {
-    width: 100px;
-    height: 70px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
 
 /* ============================
     Header & Navigation
 ============================ */
-.name, .main-nav li {
-    background: grey;
-}
 
 .main-header, .main-portfolio, .main-contact {
     text-align: center;
-}
-
-h1 {
-/*    margin-top: 0;*/ /* Set this to remove the gap between the top and the header */
 }
 
 .main-header {
     padding: 1em 0;
 }
 
-.main-portfolio {
+.main-about {
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+.main-nav li {
     background: white;
-    padding-top: 30px;
 }
 
 ul {
@@ -61,14 +72,18 @@ ul {
 ul li {
     text-decoration: none;
     list-style: none;
-/*
-    padding: 10px 0; */
     margin: 5px 0;
     background-color: white;
 }
 
+.main-nav a:link {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
 .main-nav a:hover {
-    color: white;
+    color: lightblue;
     text-decoration: none;
     list-style: none;
 }
@@ -78,6 +93,64 @@ ul li {
     padding: 10px 10px;
     display: block;
 }
+
+
+/* ============================
+    About
+============================ */
+
+.main-about {
+    text-align: center;
+}
+
+
+/* ============================
+    Portfolio
+============================ */
+
+.main-portfolio {
+    background: white;
+    padding: 1em 0;
+}
+
+.portfolio-name {
+    padding: 1em 0;
+}
+
+.box {
+    padding: .5em 0;
+}
+
+
+/* ============================
+    Contact
+============================ */
+
+.main-contact {
+    padding: 1em 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* ============================
+    Footer
+============================ */
+
+footer .container {
+    border-top: 1px dotted grey;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+.flex-container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* ============================
     Media Queries
@@ -91,7 +164,7 @@ ul li {
     }
     
     html {
-        background-color: green;
+        background-color: lightgrey;
     }
     
     .container {
@@ -100,25 +173,130 @@ ul li {
         margin: 0 auto; /* Centers all elements in the page */
     }
     
-    .profile-pic {
-        float: right;
-    }
-    
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    
     .box {
         flex: 1 40%;
+        margin-right: 10px;
     }
+    
+    /* ============================
+        Header & Navigation
+    ============================ */
+    
+    .flex-container-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    ul li {
+        border-bottom: 1px solid grey;      
+    }
+    
+    .main-nav li {
+        text-decoration: none;
+        list-style: none;
+        margin: 5px 0;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .main-nav a:link {
+        color: black;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .main-nav a:hover {
+        color: lightgreen;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .main-nav a:visited {
+        color: black;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    /* ============================
+        About
+    ============================ */
+
+    .flex-container-about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+
+    .about-box {
+        flex: 1 1 45%;
+        text-align: justify;
+        margin-right: 10px;
+    }
+    
+    .about-text {
+        font-size: 1em;
+    }
+    
+    
+    /* ============================
+        Footer
+    ============================ */
+    
+    
+    .flex-container-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-backtotop {
+        display: none;
+    }
+    
+    .bottom-nav {
+        display: inline-block;
+    }   
+    
 }
 
 
 @media (min-width: 1200px) {
     
     .box {
-        flex: 1 1 33.333%;
+        flex: 1 1 30%;
     }
+    
+    html {
+        background-color: lightgray;
+    }
+    
+    .main-header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* ============================
+        About
+    ============================ */
+
+    .flex-container-about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+
+    .about-box {
+        flex: 1 1 45%;
+        text-align: justify;
+        margin-right: 10px;
+    }
+    
 }
