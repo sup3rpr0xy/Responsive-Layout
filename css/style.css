@@ -287,16 +287,20 @@ footer .container {
 
     .flex-container-about {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row-reverse;
         align-items: stretch;
         justify-content: flex-end;
     }
 
     .about-box {
-        flex: 1 1 45%;
+        flex: 1 1 50%;
         text-align: justify;
-        margin-right: 10px;
+        margin-right: 20px;
+    }
+    
+    .profile-pic {
+        width: 100%;
     }
     
 }
