@@ -226,8 +226,8 @@ footer .container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
-        align-items: stretch;
-        justify-content: flex-end;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .about-box {
