@@ -9,30 +9,32 @@
 </head>
 <body>
     <div class="wrap"> <!-- The wrap is to create a sticky footer -->
-        <div class="main-header">
-            <div class="container">
-                <h1 class="name">Tom Torres</h1>
-                <ul class="main-nav flex-container-nav">
-                    <li class="nav-box"><a href="#">Home</a></li>
-                    <li class="nav-box"><a href="#">Portfolio</a></li>
-                    <li class="nav-box"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="main-about">
-            <div class="container flex-container-about">
-                <div class="about-box">
-                  <img class="profile-pic" src="Images/responsive-layout-profile.png" />
-                </div>
-                <div class="about-box">
-                    <p class="about-text">Hi! I'm a front-end web developer who loves responsive design, html, css and javascript. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <div class="header-bg">
+            <div class="main-header">
+                <div class="container">
+                    <h1 class="name">Tom Torres</h1>
+                    <ul class="main-nav flex-container-nav">
+                        <li class="nav-box"><a class="active" href="#">Home</a></li>
+                        <li class="nav-box"><a href="#portfolio">Portfolio</a></li>
+                        <li class="nav-box"><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="main-about">
+                <div class="container flex-container-about">
+                    <div class="about-box">
+                      <img class="profile-pic" src="Images/me_fullphoto.jpg" />
+                    </div>
+                    <div class="about-box">
+                        <p class="about-text">Hi! I'm a front-end web developer who loves responsive design, html, css and javascript. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
 
         <div class="main-portfolio">
+            <a name="portfolio"></a>
             <div class="container">
                 <h3 class="portfolio-name">Portfolio</h3>
                 <div class="flex-container">
@@ -71,6 +73,7 @@
         </div>
 
         <div class="main-contact">
+            <a name="contact"></a>
             <div class="container">
                 <h3>Contact</h3>
                 <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
@@ -88,9 +91,9 @@
             <div class="footer-right footer-box">
                 <p class="footer-backtotop"><a href="#">Back to top</a></p>
             </div>
-            <div class="bottom-nav footer-box">Home</div>
-            <div class="bottom-nav footer-box">Portfolio</div>
-            <div class="bottom-nav footer-box">Contact</div>
+            <div class="bottom-nav footer-box"><a href="#">Home</a></div>
+            <div class="bottom-nav footer-box"><a href="#portfolio">Portfolio</a></div>
+            <div class="bottom-nav footer-box"><a href="#contact">Contact</a></div>
         </div>
     </footer>
 </body>
