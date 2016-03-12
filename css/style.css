@@ -84,7 +84,7 @@ a:active {
 }
 
 .header-bg {
-    background: url("/Images/bg.jpg") no-repeat center center;
+    background: url("../Images/bg.jpg") no-repeat center center;
 }
 
 .main-header h1 {
