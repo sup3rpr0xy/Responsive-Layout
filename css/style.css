@@ -6,6 +6,12 @@
     box-sizing: border-box; /* border box forces the padding and borders into the width and height of the elements instead of expanding them. That way, it will take up exactly 70% of the viewport width */
 }
 
+.cleafix::after {
+     content: “”;
+     display: table;
+     clear: both; <— this is important as it directly relates to floats
+}
+
 h1, h4 {
   font: 400 80px/1.2 'Nixie One', Georgia, serif;
 }
@@ -88,7 +94,6 @@ a:active {
 }
 
 .main-header h1 {
-    text-shadow: horizontal-offset vertical-offset blur color;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
@@ -167,13 +172,10 @@ ul li {
     width: 100%;
     border: 2px solid white;
     box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.5);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.5);
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.5);
 }
 
 .about-box p {
     color: white;
-    text-shadow: horizontal-offset vertical-offset blur color;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     font-size: 1.25em;
 }
@@ -253,6 +255,10 @@ footer .container {
         margin-right: 10px;
     }
     
+    .box-skill {
+        margin-right: 20px;
+    }
+    
     /* ============================
         Header & Navigation
     ============================ */
@@ -297,22 +303,18 @@ footer .container {
         About
     ============================ */
 
-    .flex-container-about {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .about-box {
-        flex: 1 1 45%;
-        text-align: justify;
-        margin-right: 10px;
+    .main-about {
+        overflow: hidden;
     }
     
-    .about-text {
-        font-size: 1em;
+    .main-about p {
+        text-align: left;
+    }
+    
+    .profile-pic {
+        width: 50%;
+        float: right;
+        margin-left: 10px;
     }
     
     
