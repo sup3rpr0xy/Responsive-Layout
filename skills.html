@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>My Responsive Layout Page</title>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ledger' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+    <div class="wrap"> <!-- The wrap is to create a sticky footer -->
+        <div class="header-bg">
+            <div class="main-header">
+                <div class="container">
+                    <h1 class="name">Tom Torres</h1>
+                    <ul class="main-nav flex-container-nav">
+                        <li class="nav-box"><a  href="index.html">Home</a></li>
+                        <li class="nav-box"><a href="#portfolio">Portfolio</a></li>
+                        <li class="nav-box"><a class="active" href="skills.html">Skills</a></li>
+                        <li class="nav-box"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-portfolio">
+            <a name="portfolio"></a>
+            <div class="container">
+                <h3 class="portfolio-name">My Skills</h3>
+                <div class="flex-container">
+                    <div class="box">
+                        <img src="Images/html5-css-javascript-logos.png"/>
+                        <h2>HTML, CSS & Javascript</h2>
+                        <p>I have working knowledge of HTML, CSS and Javascript</p>
+                    </div>
+                    <div class="box">
+                        <img src="Images/jquery_logo_color_onwhite.png"/>
+                        <h2>jQuery</h2>
+                        <p>I love using jQuery to make my pages interactive</p>
+                    </div>
+                    <div class="box">
+                        <img src="Images/angular_js.svg"/>
+                        <h2>Photo Gallery</h2>
+                        <p>I make webpages update in realtime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-contact">
+            <a name="contact"></a>
+            <div class="container">
+                <h3>Contact</h3>
+                <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <p>Phone <span>+65 1234-4321</span></p>
+                <p>Email <span>300awoo@gmail.com</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container flex-container-footer">
+            <div class="footer-left footer-box">
+                <h3 class="footer-name">Tom Torres</h3>
+            </div>
+            <div class="footer-right footer-box">
+                <p class="footer-backtotop"><a href="#">Back to top</a></p>
+            </div>
+            <div class="bottom-nav footer-box"><a href="index.html">Home</a></div>
+            <div class="bottom-nav footer-box"><a href="#portfolio">Portfolio</a></div>
+            <div class="bottom-nav footer-box"><a href="skills.html">Skills</a></div>
+            <div class="bottom-nav footer-box"><a href="#contact">Contact</a></div>
+        </div>
+    </footer>
+</body>
+</html>
