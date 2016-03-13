@@ -6,12 +6,6 @@
     box-sizing: border-box; /* border box forces the padding and borders into the width and height of the elements instead of expanding them. That way, it will take up exactly 70% of the viewport width */
 }
 
-.cleafix::after {
-     content: “”;
-     display: table;
-     clear: both; <— this is important as it directly relates to floats
-}
-
 h1, h4 {
   font: 400 80px/1.2 'Nixie One', Georgia, serif;
 }
