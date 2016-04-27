@@ -14,7 +14,7 @@ p {
   font: 400 15px/1.6 'Ledger', Garamond, Georgia, serif;
 }
 
-html { 
+html {
     background-color: lightgrey;
 }
 
@@ -64,7 +64,7 @@ a:hover {
     list-style: none;
 }
 
-/* active link - a link the moment it is clicked */ 
+/* active link - a link the moment it is clicked */
 a:active {
     color: black;
     text-decoration: none;
@@ -140,7 +140,7 @@ ul li {
     background-color: skyblue;
 }
 
-/* active link - a link the moment it is clicked */ 
+/* active link - a link the moment it is clicked */
 .main-nav a:active {
     background: white;
 }
@@ -228,45 +228,44 @@ footer .container {
 ============================ */
 
 @media (min-width: 769px) { /* Treehouse suggests 769px instead of 600px */
-    
+
     .wrap {
         min-height: calc(100vh - 57.7188px); /* calc will subtract 89 pixels from 100vh */
-        
     }
-    
+
     html {
         background-color: lightgrey;
     }
-    
+
     .container {
         width: 70%; /* Prevents the elements from stretching too wide */
         max-width: 1000px; /* Prevents the layout container from getting any wider than 1000 pixels */
         margin: 0 auto; /* Centers all elements in the page */
     }
-    
+
     .box {
         flex: 1 40%;
         margin-right: 10px;
     }
-    
+
     .box-skill {
         margin-right: 20px;
     }
-    
+
     /* ============================
         Header & Navigation
     ============================ */
-    
+
     .flex-container-nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     ul li {
-        border-bottom: 1px solid grey;      
+        border-bottom: 1px solid grey;
     }
-    
+
     .main-nav li {
         text-decoration: none;
         list-style: none;
@@ -286,13 +285,13 @@ footer .container {
         text-decoration: none;
         list-style: none;
     }
-    
+
     .main-nav a:visited {
         color: black;
         text-decoration: none;
         list-style: none;
     }
-    
+
     /* ============================
         About
     ============================ */
@@ -300,58 +299,58 @@ footer .container {
     .main-about {
         overflow: hidden;
     }
-    
+
     .main-about p {
         text-align: left;
     }
-    
+
     .profile-pic {
         width: 50%;
         float: right;
         margin-left: 10px;
     }
-    
-    
+
+
     /* ============================
         Footer
     ============================ */
-    
-    
+
+
     .flex-container-footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .footer-backtotop {
         display: none;
     }
-    
+
     .bottom-nav {
         display: inline-block;
-    }   
-    
+    }
+
 }
 
 
 @media (min-width: 1200px) {
-    
+
     .box {
         flex: 1 1 30%;
     }
-    
+
     html {
         background-color: lightgray;
     }
-    
+
     .main-header .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     /* ============================
         About
     ============================ */
@@ -369,7 +368,7 @@ footer .container {
         text-align: justify;
         margin-right: 20px;
     }
-    
 
-    
+
+
 }
