@@ -1,0 +1,12 @@
+/* ============================
+    Contact
+============================ */
+
+.main-contact {
+    @extend %centered;
+    padding: 1em 0;
+}
+
+span {
+    font-weight: bold;
+}

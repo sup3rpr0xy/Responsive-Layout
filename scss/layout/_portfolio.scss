@@ -1,0 +1,17 @@
+/* ============================
+    Portfolio
+============================ */
+
+.main-portfolio {
+    @extend %centered;
+    background: white;
+    padding: 1em 0;
+}
+
+.portfolio-name {
+    padding: 1em 0;
+}
+
+.box {
+    padding: .5em 0;
+}

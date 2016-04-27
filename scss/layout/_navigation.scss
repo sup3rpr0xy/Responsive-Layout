@@ -1,0 +1,55 @@
+/* ============================
+    Navigation
+============================ */
+
+.main-nav li {
+    background: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    @extend %none-lstd;
+    margin: 5px 0;
+    background-color: white;
+}
+
+.name a,
+.main-nav a {
+    padding: 10px 10px;
+    display: block;
+}
+
+/* unvisited link */
+.main-nav a:link {
+    color: black;
+    @extend %none-lstd;
+}
+
+/* visited link */
+.main-nav a:visited {
+    color: black;
+    @extend %none-lstd;
+}
+
+/* mouse over link */
+.main-nav a:hover {
+    color: white;
+    @extend %none-lstd;
+    background-color: skyblue;
+}
+
+/* active link - a link the moment it is clicked */
+.main-nav a:active {
+    background: white;
+}
+
+/* current link */
+.active {
+    background-color: lightblue;
+    color: white;
+}

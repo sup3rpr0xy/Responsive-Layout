@@ -1,0 +1,16 @@
+/* ============================
+    Header
+============================ */
+
+.main-header {
+    @extend %centered;
+    padding: 1em 0;
+}
+
+.header-bg {
+    background: url("../Images/bg.jpg") no-repeat center center;
+}
+
+.main-header h1 {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
