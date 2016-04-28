@@ -1,0 +1,19 @@
+// Web fonts
+
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$file}');
+    src: url('#{$file}');
+  }
+}
+
+// then on the partial...
+// @include font-face('Abolition Regular', abolition-regular);
+
+@mixin text-link($color, $txt-decor, $l-style) {
+  color: $color;
+  text-decoration: $txt-decor;
+  list-style: $l-style;
+}
+

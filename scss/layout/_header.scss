@@ -4,11 +4,11 @@
 
 .main-header {
     @extend %centered;
-    padding: 1em 0;
+    @extend %normal-padding;
 }
 
 .header-bg {
-    background: url("../Images/bg.jpg") no-repeat center center;
+  background: url("#{$path-img}/bg.jpg") no-repeat center center;
 }
 
 .main-header h1 {

@@ -1,0 +1,22 @@
+// Descriptive color variables
+$white        : #fff;
+$black        : #000;
+$lightgray    : lightgray;
+$lightgreen   : lightgreen;
+
+// Functional color variables
+$color-white      : $white;
+$color-black      : $black;
+$color-lightgray  : $lightgray;
+$color-lightgreen : $lightgreen;
+
+// Font stacks
+$nixie-font     : 'Nixie One', Georgia, serif;
+$ledger-font    : 'Ledger', Garamond, Georgia, serif;
+
+// Asset paths
+$path-img       : '../Images';
+
+// Media query breakpoints
+$brk-narrow   : '';
+$brk-wide     : 

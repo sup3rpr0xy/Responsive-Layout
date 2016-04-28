@@ -24,32 +24,34 @@ ul li {
     display: block;
 }
 
-/* unvisited link */
-.main-nav a:link {
-    color: black;
-    @extend %none-lstd;
-}
+.main-nav {
+  /* unvisited link */
+  & a:link {
+      color: $color-black;
+      @extend %none-lstd;
+  }
 
-/* visited link */
-.main-nav a:visited {
-    color: black;
-    @extend %none-lstd;
-}
+  /* visited link */
+  & a:visited {
+      color: $color-black;
+      @extend %none-lstd;
+  }
 
-/* mouse over link */
-.main-nav a:hover {
-    color: white;
-    @extend %none-lstd;
-    background-color: skyblue;
-}
+  /* mouse over link */
+  & a:hover {
+      color: $color-black;
+      @extend %none-lstd;
+      background-color: skyblue;
+  }
 
-/* active link - a link the moment it is clicked */
-.main-nav a:active {
-    background: white;
+  /* active link - a link the moment it is clicked */
+  & a:active {
+      background: $color-white;
+  }
 }
 
 /* current link */
 .active {
     background-color: lightblue;
-    color: white;
+    color: $color-white;
 }

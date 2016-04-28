@@ -4,7 +4,7 @@
 
 .main-about {
     @extend %centered;
-    padding: 1em 0;
+    @extend %normal-padding;
     margin: 1em 0;
 }
 

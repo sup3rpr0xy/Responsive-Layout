@@ -7,11 +7,11 @@
 }
 
 h1, h4 {
-  font: 400 80px/1.2 'Nixie One', Georgia, serif;
+  font: 400 80px/1.2 $nixie-font;
 }
 
 p {
-  font: 400 15px/1.6 'Ledger', Garamond, Georgia, serif;
+  font: 400 15px/1.6 $ledger-font;
 }
 
 html {
@@ -42,30 +42,24 @@ img {
     justify-content: space-between;
 }
 
-/* unvisited link */
-a:link {
-    color: black;
-    text-decoration: none;
-    list-style: none;
-}
+a {
+  /* unvisited link */
+  &:link {
+    @include text-link($color-black, none, none);
+  }
 
-/* visited link */
-a:visited {
-    color: black;
-    text-decoration: none;
-    list-style: none;
-}
+  /* visited link */
+  &:visited {
+    @include text-link($color-black, none, none);
+  }
 
-/* mouse over link */
-a:hover {
-    color: black;
-    text-decoration: none;
-    list-style: none;
-}
-
-/* active link - a link the moment it is clicked */
-a:active {
-    color: black;
-    text-decoration: none;
-    list-style: none;
+  /* mouse over link */
+  &:hover {
+    @include text-link($color-black, none, none);
+  }
+  
+  /* active link - a link the moment it is clicked */
+  &:active {
+    @include text-link($color-black, none, none);
+  }
 }

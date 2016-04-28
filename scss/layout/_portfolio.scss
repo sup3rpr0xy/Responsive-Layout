@@ -5,11 +5,11 @@
 .main-portfolio {
     @extend %centered;
     background: white;
-    padding: 1em 0;
+    @extend %normal-padding
 }
 
 .portfolio-name {
-    padding: 1em 0;
+    @extend%normal-padding;
 }
 
 .box {

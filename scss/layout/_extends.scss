@@ -1,13 +1,15 @@
 // Center text
-
 %centered {
   text-align: center;
 }
 
-
 // List Style None
-
 %none-lstd {
   list-style: none;
   text-decoration: none;
+}
+
+// Padding
+%normal-padding {
+  padding: 1em 0;
 }
