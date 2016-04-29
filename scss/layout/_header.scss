@@ -1,6 +1,40 @@
 /* ============================
+    Wrap and Boxes
+============================ */
+
+.wrap {
+  @media #{$brk-tablet} {
+    min-height: calc(100vh - 57.7188px); /* calc will subtract 89 pixels from 100vh */
+  }
+}
+
+.box {
+  @media #{$brk-tablet} {
+    flex: 1 40%;
+    margin-right: 10px;
+  }
+  @media #{$brk-desktop} {
+    flex: 1 1 30%;
+  }
+}
+
+.box-skill {
+  @media #{$brk-tablet} {
+    margin-right: 20px;
+  }
+}
+
+/* ============================
     Header
 ============================ */
+
+.flex-container-nav {
+  @media #{$brk-tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .main-header {
     @extend %centered;
@@ -13,4 +47,13 @@
 
 .main-header h1 {
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.main-header .container {
+  @media #{$brk-desktop} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

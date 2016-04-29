@@ -15,7 +15,7 @@ p {
 }
 
 html {
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 
 body {
@@ -24,6 +24,12 @@ body {
 
 .container {
     padding: 0 1em;
+    
+    @media #{$brk-tablet} {
+        width: 70%; /* Prevents the elements from stretching too wide */
+        max-width: 1000px; /* Prevents the layout container from getting any wider than 1000 pixels */
+        margin: 0 auto; /* Centers all elements in the page */
+    }
 }
 
 h3 {

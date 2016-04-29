@@ -8,10 +8,26 @@ footer .container {
 
 .bottom-nav {
     display: none;
+  
+    @media #{$brk-tablet} {
+      display: inline-block;
+    }
 }
 
 .flex-container-footer {
     display: flex;
     justify-content: space-between;
+  
+    @media #{$brk-tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
+.footer-backtotop {
+  @media #{$brk-tablet} {
+    display: none;
+  }
+}

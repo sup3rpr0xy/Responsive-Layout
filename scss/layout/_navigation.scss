@@ -4,6 +4,14 @@
 
 .main-nav li {
     background: white;
+  
+  @media #{$brk-tablet} {
+    text-decoration: none;
+    list-style: none;
+    margin: 5px 0;
+    margin-right: 20px;
+    background: none;  
+  }
 }
 
 ul {
@@ -16,6 +24,10 @@ ul li {
     @extend %none-lstd;
     margin: 5px 0;
     background-color: white;
+  
+    @media #{$brk-tablet} {
+        border-bottom: 1px solid grey;
+  }
 }
 
 .name a,
@@ -29,12 +41,24 @@ ul li {
   & a:link {
       color: $color-black;
       @extend %none-lstd;
+    
+      @media #{$brk-tablet} {
+        color: black;
+        text-decoration: none;
+        list-style: none;
+      }
   }
 
   /* visited link */
   & a:visited {
       color: $color-black;
       @extend %none-lstd;
+    
+      @media #{$brk-tablet} {
+        color: black;
+        text-decoration: none;
+        list-style: none;
+      }
   }
 
   /* mouse over link */
@@ -42,6 +66,12 @@ ul li {
       color: $color-black;
       @extend %none-lstd;
       background-color: skyblue;
+    
+      @media #{$brk-tablet} {
+        color: lightgreen;
+        text-decoration: none;
+        list-style: none;
+      }
   }
 
   /* active link - a link the moment it is clicked */
