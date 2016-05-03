@@ -7,15 +7,15 @@
 }
 
 h1, h4 {
-  font: 400 80px/1.2 $nixie-font;
+  @include heading-fontsize($nixie-font);
 }
 
 p {
-  font: 400 15px/1.6 $ledger-font;
+  @include p-fontsize($ledger-font);
 }
 
 html {
-    background-color: lightgray;
+    background-color: $color-lightgray;
 }
 
 body {

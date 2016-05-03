@@ -17,3 +17,11 @@
   list-style: $l-style;
 }
 
+@mixin heading-fontsize($font-type) {
+  font: 400 80px/1.2 $font-type;
+  
+}
+
+@mixin p-fontsize($font-type) {
+  font: 400 15px/1.6 $font-type;
+}

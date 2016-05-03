@@ -3,6 +3,9 @@ $white        : #fff;
 $black        : #000;
 $lightgray    : lightgray;
 $lightgreen   : lightgreen;
+$gray         : gray;
+$skyblue      : skyblue;
+$l-blue       : lightblue;
 
 // Functional color variables
 $color-white      : $white;
@@ -18,5 +21,12 @@ $ledger-font    : 'Ledger', Garamond, Georgia, serif;
 $path-img       : '../Images';
 
 // Media query breakpoints
-$brk-tablet   : '(min-width: 769px)';
+$brk-tablet      : '(min-width: 769px)';
 $brk-desktop     : '(min-width: 1200px)';
+
+// Shadow effect
+$drop-shadow            : rgba(0,0,0,0.3);
+$profilepic-boxshadow   : rgba(119, 119, 119, 0.5);
+
+// Font size
+$about-textsize : 1.25em;

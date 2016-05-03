@@ -102,7 +102,7 @@ ul li, .main-nav a:link, .main-nav a:visited, .main-nav a:hover {
 
 .profile-pic {
   width: 100%;
-  border: 2px solid white;
+  border: 2px solid #fff;
   box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.5); }
   @media (min-width: 769px) {
     .profile-pic {
@@ -202,7 +202,7 @@ footer .container {
     Navigation
 ============================ */
 .main-nav li {
-  background: white; }
+  background: #fff; }
   @media (min-width: 769px) {
     .main-nav li {
       text-decoration: none;
@@ -218,10 +218,10 @@ ul {
 
 ul li {
   margin: 5px 0;
-  background-color: white; }
+  background-color: #fff; }
   @media (min-width: 769px) {
     ul li {
-      border-bottom: 1px solid grey; } }
+      border-bottom: 1px solid gray; } }
 
 .name a,
 .main-nav a {
@@ -237,14 +237,14 @@ ul li {
     color: #000; }
     @media (min-width: 769px) {
       .main-nav a:link {
-        color: black;
+        color: #000;
         text-decoration: none;
         list-style: none; } }
   .main-nav a:visited {
     color: #000; }
     @media (min-width: 769px) {
       .main-nav a:visited {
-        color: black;
+        color: #000;
         text-decoration: none;
         list-style: none; } }
   .main-nav a:hover {
@@ -267,7 +267,7 @@ ul li {
     Portfolio
 ============================ */
 .main-portfolio {
-  background: white; }
+  background: #fff; }
 
 .box {
   padding: .5em 0; }
