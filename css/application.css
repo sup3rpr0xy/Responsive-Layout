@@ -69,92 +69,15 @@ a {
     text-decoration: none;
     list-style: none; }
 
-.main-about, .main-contact, .main-header, .main-portfolio {
+.main-header, .main-about, .main-contact, .main-portfolio {
   text-align: center; }
 
 ul li, .main-nav a:link, .main-nav a:visited, .main-nav a:hover {
   list-style: none;
   text-decoration: none; }
 
-.main-about, .main-header, .main-portfolio, .portfolio-name {
+.main-header, .main-about, .main-portfolio, .portfolio-name {
   padding: 1em 0; }
-
-/* ============================
-    About
-============================ */
-@media (min-width: 1200px) {
-  .flex-container-about {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    align-items: stretch;
-    justify-content: flex-end; } }
-
-.main-about {
-  margin: 1em 0; }
-  @media (min-width: 769px) {
-    .main-about {
-      overflow: hidden; } }
-
-@media (min-width: 769px) {
-  .main-about p {
-    text-align: left; } }
-
-.profile-pic {
-  width: 100%;
-  border: 2px solid #fff;
-  box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.5); }
-  @media (min-width: 769px) {
-    .profile-pic {
-      width: 50%;
-      float: right;
-      margin-left: 10px; } }
-
-@media (min-width: 1200px) {
-  .about-box {
-    flex: 1 1 50%;
-    text-align: justify;
-    margin-right: 20px; } }
-
-.about-box p {
-  color: white;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  font-size: 1.25em; }
-
-/* ============================
-    Contact
-============================ */
-.main-contact {
-  padding: 1em 0; }
-
-span {
-  font-weight: bold; }
-
-/* ============================
-    Footer
-============================ */
-footer .container {
-  border-top: 1px dotted grey; }
-
-.bottom-nav {
-  display: none; }
-  @media (min-width: 769px) {
-    .bottom-nav {
-      display: inline-block; } }
-
-.flex-container-footer {
-  display: flex;
-  justify-content: space-between; }
-  @media (min-width: 769px) {
-    .flex-container-footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center; } }
-
-@media (min-width: 769px) {
-  .footer-backtotop {
-    display: none; } }
 
 /* ============================
     Wrap and Boxes
@@ -262,6 +185,83 @@ ul li {
 .active {
   background-color: lightblue;
   color: #fff; }
+
+/* ============================
+    About
+============================ */
+@media (min-width: 1200px) {
+  .flex-container-about {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: flex-end; } }
+
+.main-about {
+  margin: 1em 0; }
+  @media (min-width: 769px) {
+    .main-about {
+      overflow: hidden; } }
+
+@media (min-width: 769px) {
+  .main-about p {
+    text-align: left; } }
+
+.profile-pic {
+  width: 100%;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px 1px rgba(119, 119, 119, 0.5); }
+  @media (min-width: 769px) {
+    .profile-pic {
+      width: 50%;
+      float: right;
+      margin-left: 10px; } }
+
+@media (min-width: 1200px) {
+  .about-box {
+    flex: 1 1 50%;
+    text-align: justify;
+    margin-right: 20px; } }
+
+.about-box p {
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.25em; }
+
+/* ============================
+    Contact
+============================ */
+.main-contact {
+  padding: 1em 0; }
+
+span {
+  font-weight: bold; }
+
+/* ============================
+    Footer
+============================ */
+footer .container {
+  border-top: 1px dotted grey; }
+
+.bottom-nav {
+  display: none; }
+  @media (min-width: 769px) {
+    .bottom-nav {
+      display: inline-block; } }
+
+.flex-container-footer {
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 769px) {
+    .flex-container-footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; } }
+
+@media (min-width: 769px) {
+  .footer-backtotop {
+    display: none; } }
 
 /* ============================
     Portfolio
