@@ -21,12 +21,14 @@ $ledger-font    : 'Ledger', Garamond, Georgia, serif;
 $path-img       : '../Images';
 
 // Media query breakpoints
-$brk-tablet      : '(min-width: 769px)';
-$brk-desktop     : '(min-width: 1200px)';
+$brk-tablet      : 769px;
+$brk-desktop     : 1200px;
 
 // Shadow effect
 $drop-shadow            : rgba(0,0,0,0.3);
 $profilepic-boxshadow   : rgba(119, 119, 119, 0.5);
 
 // Font size
-$about-textsize : 1.25em;
+$about-textsize       : 1.25em;
+$heading-textsize     : 400 80px/1.2;
+$paragraph-textsize   : 400 15px/1.6;

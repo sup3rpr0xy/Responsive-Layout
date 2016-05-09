@@ -9,7 +9,7 @@ footer .container {
 .bottom-nav {
     display: none;
   
-    @media #{$brk-tablet} {
+    @include tablet {
       display: inline-block;
     }
 }
@@ -18,7 +18,7 @@ footer .container {
     display: flex;
     justify-content: space-between;
   
-    @media #{$brk-tablet} {
+    @include tablet {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -27,7 +27,7 @@ footer .container {
 }
 
 .footer-backtotop {
-  @media #{$brk-tablet} {
+  @include tablet {
     display: none;
   }
 }

@@ -18,10 +18,23 @@
 }
 
 @mixin heading-fontsize($font-type) {
-  font: 400 80px/1.2 $font-type;
-  
+  font: $heading-textsize $font-type;
 }
 
 @mixin p-fontsize($font-type) {
-  font: 400 15px/1.6 $font-type;
+  font: $paragraph-textsize $font-type;
 }
+
+// Media query mixins
+@mixin tablet {
+  @media (min-width: #{$brk-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$brk-desktop}) {
+    @content;
+  }
+}
+
